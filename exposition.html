@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <!-- Link Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom CSS styles */
+        body {
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #444;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Set fixed width and height for images */
+        .gallery-image {
+            max-width: 100%; /* Adjust as needed */
+            height: auto; /* Maintain aspect ratio */
+            max-height: 300px; /* Adjust as needed */
+            margin-bottom: 20px; /* Add some spacing between images */
+        }
+
+        /* Title styling */
+        .image-title {
+            font-family: Georgia, serif; /* Set font to Georgia */
+            font-size: 1rem; /* Adjust font size */
+            margin-top: 20px; /* Add some top margin */
+            text-align: left; /* Left-align the title */
+        }
+
+        .image-title2 {
+            font-family: Georgia, serif; /* Set font to Georgia */
+            font-size: 1rem; /* Adjust font size */
+            margin-top: 20px; /* Add some top margin */
+            text-align: left; /* Left-align the title */
+            padding-left: 450px;
+        }
+
+
+        .gallery-item {
+            margin-bottom: 40px;
+        }
+        .gallery-item2 {
+            margin-bottom: 40px;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Expositions</h1>
+    </header>
+    <nav>
+        <a href="website.html">Accueil</a>
+        <a href="gallery.html">Œuvres</a>
+        <a href="personnalité.html">Personnalités</a>
+        <a href="#">Expositions</a>
+        <a href="apropos.html">À propos</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <section class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-4 col-sm-6 col-12">
+                <div class="gallery-item">
+                    <img src="image00013.jpeg" class="gallery-image" alt="image00013.jpeg">
+                    <div class="gallery-text">
+                        <p class="image-title">Exposition à IESA Art&Culture<br>Avril 2024<br>Paris</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-md-4 col-sm-6 col-12">
+                <div class="gallery-item2">
+                    <img src="galerie.jpeg" class="gallery-image" alt="Galerie Image">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-md-4 col-sm-6 col-12">
+                <div class="gallery-item">
+                    <img src="galerie3.jpeg" class="gallery-image" alt="Galerie3 Image">
+                    <div class="gallery-text">
+                        <p class="image-title">Exposition à Boissy-sous-Saint-Yon<br>Mars 2024<br>91</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-md-4 col-sm-6 col-12">
+                <div class="gallery-item2">
+                    <img src="galerie2.jpeg" class="gallery-image" alt="Galerie2 Image">
+                    <div class="gallery-text">
+                        <p class="image-title">Realisation en direct lors d'un mariage<br>Janvier 2024</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 Présentation de mes œuvres modernes. Tous droits réservés.</p>
+    </footer>
+
+    <!-- Link Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

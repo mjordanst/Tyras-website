@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Présentation d'œuvres modernes</title>
+    <!-- Link Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #444;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .gallery img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Animation d'apparition progressive */
+        .fade-in {
+            opacity: 0;
+            transition: opacity 0.8s ease-in-out;
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .fade-in.show {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Présentation d'œuvres modernes</h1>
+    </header>
+    <nav>
+        <a href="#">Accueil</a>
+        <a href="gallery.html">Œuvres</a>
+        <a href="personnalité.html">Personnalités</a>
+        <a href="exposition.html">Expositions</a>
+        <a href="apropos.html">À propos</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <section>
+        <div class="gallery">
+            <div class="card">
+                <img src="image00013.jpeg" class="card-img-top" alt="image00013.jpeg">
+                <div class="card-body">
+                    <p class="card-text" align="right">2pac Shakur<br>The Notorious<br>Peintre acrylique<br>Chassis toilé<br>80x60<br>(2023)</p>
+                </div>
+            </div>
+        </div>
+        <br>
+        <p style="font-size:17px" class="fade-in">Bienvenue dans mon univers,<br>
+            où l'essence de la culture et de la créativité fusionne dans des œuvres captivantes.</p>
+    </section>
+    <footer>
+        <p>&copy; 2024 Présentation d'œuvres modernes. Tous droits réservés.</p>
+    </footer>
+
+    <!-- Link Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Ajouter la classe 'show' lorsque l'élément entre dans la vue
+        window.addEventListener('scroll', () => {
+            const elements = document.querySelectorAll('.fade-in');
+            elements.forEach(element => {
+                if (isElementInViewport(element)) {
+                    element.classList.add('show');
+                }
+            });
+        });
+
+        function isElementInViewport(el) {
+            const rect = el.getBoundingClientRect();
+            return (
+                rect.top >= 0 &&
+                rect.left >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+            );
+        }
+    </script>
+</body>
+</html>
